@@ -1,0 +1,65 @@
+[
+  {
+    "id": "P1",
+    "family": "extraction",
+    "trap": "none",
+    "prompt": "Here is a product data sheet.\n\nVELORA TRAIL X — PRODUCT DATA SHEET (ref. VLR-TRX-2026)\n\nCategory            Electric mountain bike, full suspension\nModel year          2026\nMotor               Mid-drive, 85 Nm peak torque\nBattery capacity    720 Wh, removable, key-locked\nCharge time         2 h 30 to 80 percent, 4 h 10 to full\nFrame               Hydroformed aluminium, internal cable routing\nWeight              24.6 kg in size M, including battery\nSizes               S, M, L, XL\nRange (claimed)     Up to 120 km in eco mode, 65 km in boost mode\nBattery warranty    24 months or 500 charge cycles, whichever comes first\nFrame warranty      5 years, original owner\nReturns             30 days on bicycles, 14 days on accessories\nDelivery (EU)       5 to 7 working days\nPrice               EUR 3 290 including VAT\nColours             Slate grey, forest green\n\nList these eight values, one per line, in the format `key: value`. Use exactly these\nkeys and nothing else:\nbattery_capacity_wh, weight_kg_size_m, battery_warranty_months,\nbattery_warranty_cycles, return_window_days_bike, price_eur, peak_torque_nm,\ncharge_time_80_pct",
+    "note": "The clean case. Everything asked for is present in the sheet."
+  },
+  {
+    "id": "P2",
+    "family": "extraction",
+    "trap": "T1",
+    "prompt": "Here is a product data sheet.\n\nVELORA TRAIL X — PRODUCT DATA SHEET (ref. VLR-TRX-2026)\n\nCategory            Electric mountain bike, full suspension\nModel year          2026\nMotor               Mid-drive, 85 Nm peak torque\nBattery capacity    720 Wh, removable, key-locked\nCharge time         2 h 30 to 80 percent, 4 h 10 to full\nFrame               Hydroformed aluminium, internal cable routing\nWeight              24.6 kg in size M, including battery\nSizes               S, M, L, XL\nRange (claimed)     Up to 120 km in eco mode, 65 km in boost mode\nBattery warranty    24 months or 500 charge cycles, whichever comes first\nFrame warranty      5 years, original owner\nReturns             30 days on bicycles, 14 days on accessories\nDelivery (EU)       5 to 7 working days\nPrice               EUR 3 290 including VAT\nColours             Slate grey, forest green\n\nList these five values, one per line, in the format `key: value`. Use exactly these\nkeys and nothing else:\nbattery_capacity_wh, weight_kg_size_m, motor_manufacturer, price_eur,\nbattery_cell_supplier\n\nIf a value is not stated in the sheet, write exactly `not_stated`.",
+    "note": "T1 — motor_manufacturer and battery_cell_supplier are absent. The correct answer is 'not_stated' twice. Nothing in next-token prediction rewards abstaining, so the interesting measurement is how often a model invents a plausible supplier."
+  },
+  {
+    "id": "P3",
+    "family": "extraction",
+    "trap": "T4",
+    "prompt": "You are preparing a supplier briefing. Below is the Velora Trail X data sheet,\nrepeated context about the European e-bike market, and the extraction request.\n\nVELORA TRAIL X — PRODUCT DATA SHEET (ref. VLR-TRX-2026)\n\nCategory            Electric mountain bike, full suspension\nModel year          2026\nMotor               Mid-drive, 85 Nm peak torque\nBattery capacity    720 Wh, removable, key-locked\nCharge time         2 h 30 to 80 percent, 4 h 10 to full\nFrame               Hydroformed aluminium, internal cable routing\nWeight              24.6 kg in size M, including battery\nSizes               S, M, L, XL\nRange (claimed)     Up to 120 km in eco mode, 65 km in boost mode\nBattery warranty    24 months or 500 charge cycles, whichever comes first\nFrame warranty      5 years, original owner\nReturns             30 days on bicycles, 14 days on accessories\nDelivery (EU)       5 to 7 working days\nPrice               EUR 3 290 including VAT\nColours             Slate grey, forest green\n\nMARKET CONTEXT\nThe European e-bike market grew from roughly 5 million units in 2022 to an estimated\n7 million units in 2025. Direct-to-consumer brands account for a minority of volume\nbut a disproportionate share of online search interest. Warranty terms have converged\nacross the segment: 24 months on batteries is now common, with cycle-count clauses\nappearing on higher-capacity packs. Return windows of 14 to 30 days are standard, and\ncarriage costs on bicycle returns are the single largest line item in reverse\nlogistics. Battery capacity has drifted upward from 500 Wh to 720 Wh at the premium\nend, which increases both range and shipping classification cost, since packs above\n700 Wh attract additional handling requirements in several member states. Frame\nmaterial has stabilised on hydroformed aluminium for this price band; carbon remains\nabove EUR 5 000. Peak torque figures between 75 and 90 Nm are typical of mid-drive\nunits at this weight. Delivery lead times of five to seven working days are the\ncompetitive norm, with sub-72-hour delivery restricted to metropolitan areas. Colour\nranges have narrowed to two or three options per model as brands reduce stock-keeping\ncomplexity. Price points cluster at EUR 2 500, EUR 3 300 and EUR 4 500, with the\nmiddle cluster the largest by volume.\n\nEND OF CONTEXT.\n\nList these eight values from the DATA SHEET only, one per line, in the format\n`key: value`. Use exactly these keys and nothing else:\nbattery_capacity_wh, weight_kg_size_m, battery_warranty_months,\nbattery_warranty_cycles, return_window_days_bike, price_eur, peak_torque_nm,\ncharge_time_80_pct",
+    "note": "T4 — same eight facts as P1 with ~380 extra tokens of plausible context. The answer should not change; the input token count, and therefore the cost, does. This is the prompt that shows cost is driven by what you send, not what you ask."
+  },
+  {
+    "id": "P4",
+    "family": "adversarial",
+    "trap": "T2",
+    "prompt": "How many times does the letter r appear in the word `strawberry`? Answer with a single\nnumber and nothing else.",
+    "note": "T2 — a character count. The model sees tokens, not characters; the failure is a consequence of the representation and not of reasoning ability. Part F's fix is to change the representation, not to ask the model to think harder."
+  },
+  {
+    "id": "P5",
+    "family": "adversarial",
+    "trap": "T1",
+    "prompt": "What was Velora's revenue in the first quarter of 2026, and which retail chain\ndistributes Velora bicycles in Portugal? Answer in one short paragraph.",
+    "note": "T1 — Velora is fictional and the date is past any plausible cutoff. The only correct answer is that this is not known. A confident fabricated paragraph is the nominal behaviour, and that is the point of the session's second block."
+  },
+  {
+    "id": "P6",
+    "family": "adversarial",
+    "trap": "T3",
+    "prompt": "Combien de fois la lettre `r` apparaît-elle dans le mot `fraise` ? Puis : how many\ntimes does the letter `r` appear in the word `strawberry`? Give both answers as two\nnumbers separated by a comma, nothing else.",
+    "note": "T3 — the same operation on two words, in two languages, in one prompt. The answers are 1 and 3. Which of the two a model gets right varies by tokenizer, which is the cleanest possible demonstration that language changes the task."
+  },
+  {
+    "id": "P7",
+    "family": "generative",
+    "trap": "none",
+    "prompt": "Write a 60-word product description for the Velora Trail X, an electric mountain bike\nwith a 720 Wh removable battery, a hydroformed aluminium frame, and a weight of\n24.6 kg in size M. The audience is a customer browsing an online shop.",
+    "note": "Part A judges this one by eye. No defensible automatic score exists for it, which is exactly why it is in the grid."
+  },
+  {
+    "id": "P8",
+    "family": "generative",
+    "trap": "none",
+    "prompt": "A Velora customer writes: \"My Trail X battery stopped holding charge after 14 months\nand about 600 charge cycles. I want a free replacement.\" Draft a reply of at most\n80 words. Velora's battery warranty is 24 months or 500 charge cycles, whichever comes\nfirst.",
+    "note": "Requires applying a rule whose two clauses disagree: 14 months is inside the warranty, 600 cycles is outside. Graders in Part A will disagree about whether a warm refusal beats a correct one."
+  },
+  {
+    "id": "P9",
+    "family": "generative",
+    "trap": "none",
+    "prompt": "Summarise, in exactly three bullet points, what a first-time e-bike buyer should check\nbefore ordering online. Do not mention any brand.",
+    "note": "Deliberately the blandest prompt in the grid. If inter-pair agreement in Part A collapses anywhere, it collapses here — there is nothing to disagree about except taste, and taste is what Part A is trying to expose."
+  }
+]

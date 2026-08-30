@@ -1,0 +1,84 @@
+{
+  "product_sheet": "VELORA TRAIL X — PRODUCT DATA SHEET (ref. VLR-TRX-2026)\n\nCategory            Electric mountain bike, full suspension\nModel year          2026\nMotor               Mid-drive, 85 Nm peak torque\nBattery capacity    720 Wh, removable, key-locked\nCharge time         2 h 30 to 80 percent, 4 h 10 to full\nFrame               Hydroformed aluminium, internal cable routing\nWeight              24.6 kg in size M, including battery\nSizes               S, M, L, XL\nRange (claimed)     Up to 120 km in eco mode, 65 km in boost mode\nBattery warranty    24 months or 500 charge cycles, whichever comes first\nFrame warranty      5 years, original owner\nReturns             30 days on bicycles, 14 days on accessories\nDelivery (EU)       5 to 7 working days\nPrice               EUR 3 290 including VAT\nColours             Slate grey, forest green",
+  "facts": [
+    {
+      "key": "battery_capacity_wh",
+      "question": "battery capacity in watt-hours",
+      "accepted": [
+        "720",
+        "720 wh",
+        "720wh"
+      ]
+    },
+    {
+      "key": "weight_kg_size_m",
+      "question": "weight in kilograms in size M",
+      "accepted": [
+        "24.6",
+        "24,6",
+        "24.6 kg",
+        "24.6kg"
+      ]
+    },
+    {
+      "key": "battery_warranty_months",
+      "question": "battery warranty in months",
+      "accepted": [
+        "24",
+        "24 months",
+        "24 month"
+      ]
+    },
+    {
+      "key": "battery_warranty_cycles",
+      "question": "battery warranty in charge cycles",
+      "accepted": [
+        "500",
+        "500 cycles",
+        "500 charge cycles"
+      ]
+    },
+    {
+      "key": "return_window_days_bike",
+      "question": "return window for bicycles in days",
+      "accepted": [
+        "30",
+        "30 days"
+      ]
+    },
+    {
+      "key": "price_eur",
+      "question": "price in euros including VAT",
+      "accepted": [
+        "3290",
+        "3 290",
+        "3,290",
+        "3290.00",
+        "eur 3290",
+        "3290 eur"
+      ]
+    },
+    {
+      "key": "peak_torque_nm",
+      "question": "peak motor torque in newton-metres",
+      "accepted": [
+        "85",
+        "85 nm",
+        "85nm"
+      ]
+    },
+    {
+      "key": "charge_time_80_pct",
+      "question": "time to charge to 80 percent",
+      "accepted": [
+        "2 h 30",
+        "2h30",
+        "2:30",
+        "2 hours 30 minutes",
+        "2 hours and 30 minutes",
+        "150 minutes",
+        "2.5 hours"
+      ]
+    }
+  ]
+}
