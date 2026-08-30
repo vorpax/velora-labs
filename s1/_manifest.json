@@ -1,0 +1,39 @@
+{
+  "session": 1,
+  "base": "https://raw.githubusercontent.com/vorpax/velora-labs/v2026.1/s1/",
+  "files": [
+    {
+      "name": "s1_prompts.json",
+      "sha256": "24ce5a743d9bc5973d09d37c0530a786ce9608e74d1101126e1faed94bd73e04",
+      "bytes": 8779
+    },
+    {
+      "name": "s1_texts.json",
+      "sha256": "c1ca8ccab9ead06b6803cae905b7e106ad222e554cda617fa2452a5f5b3de60f",
+      "bytes": 4488
+    },
+    {
+      "name": "s1_product_facts.json",
+      "sha256": "bee4fbbccd9dbba586c410ca4822f5bf908f8139cbcd594268d833b29d00f749",
+      "bytes": 2496
+    }
+  ],
+  "folders": [],
+  "extra": [
+    {
+      "name": "DATA_SPEC.md",
+      "sha256": "ec42a76cee30e47d297a7973c64665c13b40614e9c580d091990fd2e8b1e2010",
+      "bytes": 8297
+    },
+    {
+      "name": "S1_key_check.ipynb",
+      "sha256": "0ae234b063334fb46a7400fc3712992e90b74f4440145a0fdbb7c9776b199982",
+      "bytes": 4339
+    },
+    {
+      "name": "S1_lab_student.ipynb",
+      "sha256": "39f832f00d21f81968c382ec6ea741d33eec9ec28ca55c76103bb7cb305ca012",
+      "bytes": 42497
+    }
+  ]
+}
