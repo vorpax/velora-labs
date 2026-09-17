@@ -1,0 +1,227 @@
+[
+  {
+    "id": "Q01",
+    "question": "How long is the battery guaranteed on a Trail X?",
+    "traps": [
+      "T-LEXICAL",
+      "T-CONTRADICT",
+      "T-DISTRACTOR"
+    ],
+    "gold_chunk_ids": [
+      "warranty-battery-2025#cell-coverage-period",
+      "manual-trail-x#cell-coverage-period"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q02",
+    "question": "A customer's battery failed after 14 months and 600 charge cycles. Is it covered?",
+    "traps": [
+      "T-LEXICAL",
+      "T-NUMERIC"
+    ],
+    "gold_chunk_ids": [
+      "warranty-battery-2025#cell-coverage-period",
+      "playbook-warranty-claims#common-cases"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q03",
+    "question": "How many days do I have to return an accessory bought in the UK?",
+    "traps": [
+      "T-SPLIT"
+    ],
+    "gold_chunk_ids": [
+      "returns-policy-uk#return-windows-by-product-category"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q04",
+    "question": "What is the total lead time from placing a cell order to having the cells available for production?",
+    "traps": [
+      "T-NUMERIC"
+    ],
+    "gold_chunk_ids": [
+      "supplier-contract-cells#lead-time-and-service-level",
+      "supplier-contract-cells#incoming-quality-control"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q05",
+    "question": "Does the battery warranty cover water damage?",
+    "traps": [
+      "T-LEXICAL"
+    ],
+    "gold_chunk_ids": [
+      "warranty-battery-2025#what-is-not-covered",
+      "faq-battery-charging#what-happens-if-it-gets-wet"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q06",
+    "question": "What is Velora's gross margin on replacement battery packs?",
+    "traps": [
+      "T-DISTRACTOR"
+    ],
+    "gold_chunk_ids": [
+      "memo-pricing-2026#gross-margin-by-line"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q07",
+    "question": "How much does Velora charge for delivery to Switzerland?",
+    "traps": [
+      "T-SPLIT"
+    ],
+    "gold_chunk_ids": [
+      "delivery-lead-times#standard-lead-times"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q08",
+    "question": "What is the warranty period on the Aero helmet?",
+    "traps": [
+      "T-DISTRACTOR"
+    ],
+    "gold_chunk_ids": [
+      "warranty-helmet-aero#coverage-period"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q09",
+    "question": "Which employees at Velora can approve a 15 % discount?",
+    "traps": [
+      "T-DISTRACTOR"
+    ],
+    "gold_chunk_ids": [
+      "memo-pricing-2026#discount-authority"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q10",
+    "question": "What is Velora's parental leave policy?",
+    "traps": [
+      "T-UNANSWERABLE"
+    ],
+    "gold_chunk_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "Q11",
+    "question": "How long does the cell supplier have to collect a lot that failed incoming quality control?",
+    "traps": [
+      "T-SPLIT"
+    ],
+    "gold_chunk_ids": [
+      "supplier-contract-cells#non-conformity"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q12",
+    "question": "If a customer's 720 Wh pack is on the August 2025 affected list and has 620 cycles at month 18, what happens?",
+    "traps": [
+      "T-CONTRADICT",
+      "T-NUMERIC"
+    ],
+    "gold_chunk_ids": [
+      "notice-battery-recall-2025#what-velora-is-doing",
+      "warranty-battery-2025#cell-coverage-period"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q13",
+    "question": "What is the price of a replacement 720 Wh battery pack in 2026?",
+    "traps": [
+      "T-DISTRACTOR"
+    ],
+    "gold_chunk_ids": [
+      "memo-pricing-2026#recommended-retail-prices-2026"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q14",
+    "question": "Can I return a bicycle I have already ridden?",
+    "traps": [
+      "T-LEXICAL"
+    ],
+    "gold_chunk_ids": [
+      "returns-policy-eu#condition-of-returned-goods",
+      "faq-battery-charging#can-i-return-a-bicycle-i-have-ridden"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q15",
+    "question": "What is the service level Velora's logistics carrier commits to, and what happens when it is missed?",
+    "traps": [
+      "T-NUMERIC"
+    ],
+    "gold_chunk_ids": [
+      "supplier-contract-logistics#service-level"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q17",
+    "question": "Does Velora offer a student discount?",
+    "traps": [
+      "T-DISTRACTOR"
+    ],
+    "gold_chunk_ids": [
+      "policy-price-match#student-and-trade-pricing"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q18",
+    "question": "What certification does the Aero helmet carry?",
+    "traps": [
+      "T-LEXICAL"
+    ],
+    "gold_chunk_ids": [
+      "manual-aero-helmet#velora-aero-instructions-for-use"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q19",
+    "question": "How many charge cycles will a commuter riding 20 km a day on an Urban S typically reach in the first year?",
+    "traps": [
+      "T-NUMERIC",
+      "T-DISTRACTOR"
+    ],
+    "gold_chunk_ids": [
+      "manual-urban-s#cell-coverage-period"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "Q20",
+    "question": "What is Velora's carbon footprint per bicycle?",
+    "traps": [
+      "T-UNANSWERABLE"
+    ],
+    "gold_chunk_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "Q21",
+    "question": "How many warranty claims did Velora receive in 2025?",
+    "traps": [
+      "T-UNANSWERABLE"
+    ],
+    "gold_chunk_ids": [],
+    "answerable": false
+  }
+]
