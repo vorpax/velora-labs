@@ -1,0 +1,62 @@
+[
+  {
+    "doc_id": "KB-WAR-01",
+    "title": "Velora battery warranty (v2025)",
+    "section": "Coverage period",
+    "text": "The traction battery supplied with a Velora bicycle is covered for 24 months from the\ndate of delivery, or 500 full charge cycles, whichever limit is reached first. Cycle\ncount is read from the battery management system at the point of claim."
+  },
+  {
+    "doc_id": "KB-WAR-02",
+    "title": "Velora battery warranty (v2025)",
+    "section": "Exclusions",
+    "text": "Coverage does not extend to damage from immersion, from charging with a non-Velora\ncharger, or from physical impact. A pack whose cycle count exceeds 500 is outside\ncoverage regardless of elapsed time."
+  },
+  {
+    "doc_id": "KB-RET-01",
+    "title": "Velora returns policy",
+    "section": "Windows",
+    "text": "Bicycles may be returned within 30 days of delivery. Accessories may be returned within\n14 days of delivery. Both windows run from delivery, not from despatch. The statutory\n14-day withdrawal period applies in addition and is never shortened by this policy."
+  },
+  {
+    "doc_id": "KB-RET-02",
+    "title": "Velora returns policy",
+    "section": "Carriage and condition",
+    "text": "Return carriage on a bicycle is borne by Velora where the return is made inside the\n30-day window and the bicycle is in resalable condition. Carriage on an accessory\nreturn is borne by the customer."
+  },
+  {
+    "doc_id": "KB-SUP-01",
+    "title": "Supplier framework agreement",
+    "section": "Lead time and quality control",
+    "text": "Lead time is 45 days from purchase order to delivery at the European warehouse. An\ninbound quality control step of 5 days follows receipt, before stock is released as\nsellable. End-to-end planning therefore uses 50 days."
+  },
+  {
+    "doc_id": "KB-FIN-01",
+    "title": "Range profitability method",
+    "section": "Landed cost",
+    "text": "Commercial margin is assessed against landed cost, not trade cost. Landed cost per unit\nis trade cost plus inbound freight, plus duty, plus the inbound quality control charge.\nQuoting a margin against trade cost overstates it."
+  },
+  {
+    "doc_id": "KB-FIN-02",
+    "title": "Range profitability method",
+    "section": "Revenue recognition",
+    "text": "Orders in status `returned`, `refunded` or `cancelled` are excluded from net revenue.\nOrders in status `processing` have not shipped and are excluded from any period figure\nthat describes what was sold."
+  },
+  {
+    "doc_id": "KB-FX-01",
+    "title": "Group reporting policy",
+    "section": "Currency translation",
+    "text": "Non-euro sales are translated at the monthly average reference rate for the month of the\norder. The payment provider's spread is booked as a separate cost line and does not\nadjust the translated revenue figure."
+  },
+  {
+    "doc_id": "KB-OPS-01",
+    "title": "Warranty registry",
+    "section": "Scope",
+    "text": "The warranty registry covers serialised bicycles from model year 2024 onward. Cycle\ncounts are not held in the registry. Accessories are not serialised and are not\nrepresented in the registry."
+  },
+  {
+    "doc_id": "KB-OPS-02",
+    "title": "Support playbook",
+    "section": "Escalation",
+    "text": "A claim that turns on a cycle count must be escalated to technical support, because the\ncount is read from the battery management system and is not available to first-line\nagents from any record they can see."
+  }
+]

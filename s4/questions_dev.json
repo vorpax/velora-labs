@@ -1,0 +1,90 @@
+[
+  {
+    "id": "Q1",
+    "question": "Across the orders shipped to the United Kingdom in March 2026 and billed in pounds, what was the total revenue in euros?",
+    "min_steps": 3,
+    "tools_required": [
+      "query_orders",
+      "search_web",
+      "calculate"
+    ],
+    "split": "reference"
+  },
+  {
+    "id": "Q2",
+    "question": "What was the gross margin, in euros and as a percentage, on the euro-denominated Cargo Pro orders delivered in March 2026? Use landed cost, not trade cost.",
+    "min_steps": 4,
+    "tools_required": [
+      "query_orders",
+      "search_web",
+      "calculate"
+    ],
+    "split": "reference"
+  },
+  {
+    "id": "Q3",
+    "question": "A customer bought a Trail X 14 months ago and the battery has stopped holding charge. The battery management system reports 612 charge cycles. Is this covered, and what should the agent tell them?",
+    "min_steps": 2,
+    "tools_required": [
+      "search_kb"
+    ],
+    "split": "reference"
+  },
+  {
+    "id": "Q4",
+    "question": "Which company manufactures the battery cells used in the Velora Trail X, and what is the cell chemistry?",
+    "min_steps": 1,
+    "tools_required": [],
+    "split": "reference"
+  },
+  {
+    "id": "Q5",
+    "question": "Julia Weber is asking about her Cargo Pro order. What did she pay, and what is its status?",
+    "min_steps": 2,
+    "tools_required": [
+      "query_orders"
+    ],
+    "split": "reference"
+  },
+  {
+    "id": "Q6",
+    "question": "How many days should Velora plan for between placing a purchase order with the supplier and having sellable stock in the warehouse?",
+    "min_steps": 2,
+    "tools_required": [
+      "search_kb"
+    ],
+    "split": "ab"
+  },
+  {
+    "id": "Q7",
+    "question": "Convert the total value of the two US dollar orders placed in March 2026 into euros.",
+    "min_steps": 3,
+    "tools_required": [
+      "query_orders",
+      "search_web",
+      "calculate"
+    ],
+    "split": "ab"
+  },
+  {
+    "id": "Q8",
+    "question": "What is Velora's net revenue from orders placed in March 2026, excluding anything returned, refunded, cancelled or still processing? Answer in euros.",
+    "min_steps": 4,
+    "tools_required": [
+      "query_orders",
+      "search_kb",
+      "search_web",
+      "calculate"
+    ],
+    "split": "ab"
+  },
+  {
+    "id": "Q9",
+    "question": "Roughly how large was the European e-bike market in 2025, and how fast is the cargo segment growing?",
+    "min_steps": 2,
+    "tools_required": [
+      "search_web"
+    ],
+    "split": "ab"
+  }
+]
