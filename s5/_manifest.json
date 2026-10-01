@@ -1,0 +1,41 @@
+{
+  "session": "5-ctf",
+  "base": "https://raw.githubusercontent.com/vorpax/velora-labs/refs/heads/main/s5_ctf/",
+  "files": [
+    {
+      "name": "orders_db.json",
+      "sha256": "d1a68a1fe1306bd1341ffd4359713192925f795602138da164fc23c4922c1f4d",
+      "bytes": 3946
+    },
+    {
+      "name": "evalset_seed.json",
+      "sha256": "d36e711125fcd36ad9d7b63734765f89bc503d3f7641f6bcee1526a17d89a8ec",
+      "bytes": 2551
+    },
+    {
+      "name": "round3_questions.json",
+      "sha256": "801f4ebbccb5ac9112d4a912cc9d3dbbfe260561c872810fd92458f6d845c01d",
+      "bytes": 258
+    }
+  ],
+  "folders": [
+    {
+      "name": "vulnerable_rag",
+      "zip": "vulnerable_rag.zip",
+      "sha256": "dd39dbc0d8740d6954e1c49e3b2fcf912b17c2b4c7fbf51cd14b769ab45dee46",
+      "n_files": 7
+    },
+    {
+      "name": "velora_kb",
+      "zip": "velora_kb.zip",
+      "sha256": "ffadf6c447bb85aadd231ece357fa9b80e1f4d5cdd563ee40a30369a1030a037",
+      "n_files": 22
+    },
+    {
+      "name": "poisoned_docs",
+      "zip": "poisoned_docs.zip",
+      "sha256": "84c6b4f9da36d1c0df70bb20c2066f544bfbd2ac005ff80cb49d936e668ae0f0",
+      "n_files": 3
+    }
+  ]
+}

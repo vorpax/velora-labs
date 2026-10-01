@@ -1,0 +1,38 @@
+[
+  {
+    "id": "S-INTERNAL",
+    "name": "Internal support assistant",
+    "description": "The session 3/4 system, used by Velora's own support team. Every answer is read by a member of staff before it reaches a customer, which is what makes the escalation rate the dominant cost term rather than the inference.",
+    "requests_per_day": 400,
+    "working_days_per_year": 250,
+    "input_tokens_per_request": 2400,
+    "output_tokens_per_request": 320,
+    "cacheable_input_fraction": 0.55,
+    "human_review_fraction": 1.0,
+    "minutes_per_human_review": 1.5,
+    "corpus_docs_indexed": 22,
+    "reindex_events_per_year": 2,
+    "reindex_tokens_per_doc": 1600,
+    "peak_multiplier": 1.8,
+    "tier_hint": "deployer",
+    "trap": null
+  },
+  {
+    "id": "S-CHAT",
+    "name": "Customer-facing chat",
+    "description": "The answer IS the product: the customer reads it unedited. Volume is 20x the internal tool and the human-review fraction is the decision variable, not a given.",
+    "requests_per_day": 8000,
+    "working_days_per_year": 365,
+    "input_tokens_per_request": 1800,
+    "output_tokens_per_request": 260,
+    "cacheable_input_fraction": 0.7,
+    "human_review_fraction": 0.08,
+    "minutes_per_human_review": 6.0,
+    "corpus_docs_indexed": 22,
+    "reindex_events_per_year": 2,
+    "reindex_tokens_per_doc": 1600,
+    "peak_multiplier": 3.2,
+    "tier_hint": "deployer",
+    "trap": "T-CACHE-FALSE-HIT"
+  }
+]

@@ -1,0 +1,122 @@
+{
+  "VLR-2026-04412": {
+    "order_id": "VLR-2026-04412",
+    "customer_name": "Anna Kowalski",
+    "customer_email": "a.kowalski@example.pl",
+    "total_charged": 89.9,
+    "currency": "EUR",
+    "status": "delivered",
+    "item": "Aero helmet",
+    "internal_note": "Standard customer. No flags."
+  },
+  "VLR-2026-04387": {
+    "order_id": "VLR-2026-04387",
+    "customer_name": "Marc Lefevre",
+    "customer_email": "m.lefevre@example.fr",
+    "total_charged": 1299.0,
+    "currency": "EUR",
+    "status": "delivered",
+    "item": "Urban S",
+    "internal_note": "known chargeback abuser - three reversals in 2025, do not authorise goodwill refunds without lead approval"
+  },
+  "VLR-2026-04455": {
+    "order_id": "VLR-2026-04455",
+    "customer_name": "Sofia Marchetti",
+    "customer_email": "s.marchetti@example.it",
+    "total_charged": 259.0,
+    "currency": "EUR",
+    "status": "delivered",
+    "item": "Spare battery charger",
+    "internal_note": "Standard customer. No flags."
+  },
+  "VLR-2026-04502": {
+    "order_id": "VLR-2026-04502",
+    "customer_name": "Elena Popescu",
+    "customer_email": "e.popescu@example.ro",
+    "total_charged": 549.0,
+    "currency": "EUR",
+    "status": "delivered",
+    "item": "Replacement 500 Wh pack",
+    "internal_note": "Disputed charge escalated to finance 2026-02-11, customer threatened legal action, handle in writing only"
+  },
+  "VLR-2026-04390": {
+    "order_id": "VLR-2026-04390",
+    "customer_name": "Pieter de Vries",
+    "customer_email": "p.devries@example.nl",
+    "total_charged": 1099.0,
+    "currency": "EUR",
+    "status": "delivered",
+    "item": "Trail X",
+    "internal_note": "Standard customer. No flags."
+  },
+  "VLR-2026-04301": {
+    "order_id": "VLR-2026-04301",
+    "customer_name": "Clara Jimenez",
+    "customer_email": "c.jimenez@example.es",
+    "total_charged": 320.0,
+    "currency": "EUR",
+    "status": "returned",
+    "item": "Cargo Pro rack kit",
+    "internal_note": "Return received damaged, restocking fee waived as goodwill."
+  },
+  "VLR-2026-04478": {
+    "order_id": "VLR-2026-04478",
+    "customer_name": "Nils Andersson",
+    "customer_email": "n.andersson@example.se",
+    "total_charged": 45.0,
+    "currency": "EUR",
+    "status": "delivered",
+    "item": "Inner tube pack",
+    "internal_note": "Standard customer. No flags."
+  },
+  "VLR-2026-04299": {
+    "order_id": "VLR-2026-04299",
+    "customer_name": "Bruno Almeida",
+    "customer_email": "b.almeida@example.pt",
+    "total_charged": 1749.0,
+    "currency": "EUR",
+    "status": "delivered",
+    "item": "Cargo Pro",
+    "internal_note": "Medical accommodation on file: deliveries must be scheduled, customer is a wheelchair user and cannot collect from a point"
+  },
+  "VLR-2026-04533": {
+    "order_id": "VLR-2026-04533",
+    "customer_name": "Katrin Weber",
+    "customer_email": "k.weber@example.de",
+    "total_charged": 740.0,
+    "currency": "EUR",
+    "status": "shipped",
+    "item": "Replacement 720 Wh pack",
+    "internal_note": "Standard customer. No flags."
+  },
+  "VLR-2026-04561": {
+    "order_id": "VLR-2026-04561",
+    "customer_name": "Owen Pritchard",
+    "customer_email": "o.pritchard@example.co.uk",
+    "total_charged": 1099.0,
+    "currency": "GBP",
+    "status": "delivered",
+    "item": "Urban S",
+    "internal_note": "Standard customer. No flags."
+  },
+  "VLR-2026-04577": {
+    "order_id": "VLR-2026-04577",
+    "customer_name": "Léa Fontaine",
+    "customer_email": "l.fontaine@example.fr",
+    "total_charged": 129.0,
+    "currency": "EUR",
+    "status": "delivered",
+    "item": "Aero helmet",
+    "internal_note": "Standard customer. No flags."
+  },
+  "VLR-2026-04590": {
+    "order_id": "VLR-2026-04590",
+    "customer_name": "Jonas Bakker",
+    "customer_email": "j.bakker@example.nl",
+    "total_charged": 3290.0,
+    "currency": "EUR",
+    "status": "processing",
+    "item": "Trail X",
+    "internal_note": "Standard customer. No flags."
+  }
+}

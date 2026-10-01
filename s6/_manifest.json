@@ -1,0 +1,54 @@
+{
+  "session": 6,
+  "base": "https://raw.githubusercontent.com/vorpax/velora-labs/v2026.1/s6/",
+  "files": [
+    {
+      "name": "pricing_table.json",
+      "sha256": "e17379d3c4740ef59d651f78ad2b64d276ed0699fa819316d82bd7ae03bd71c9",
+      "bytes": 2512
+    },
+    {
+      "name": "s6_volume_scenarios.json",
+      "sha256": "c0cc054793503beefb844137396fd03feeee01145cadabcc644bf8cf508d13a0",
+      "bytes": 1430
+    },
+    {
+      "name": "feedback_log.json",
+      "sha256": "02235486a2bece614870ec3fc18059e93c84f35a70e36dad2e33e217cdaec870",
+      "bytes": 82056
+    },
+    {
+      "name": "cost_checklist.md",
+      "sha256": "231a4de02cf4b94ee08b5a42e0b3d437249a8f93f990a8cff966fe216e400960",
+      "bytes": 4545
+    },
+    {
+      "name": "ai_act_decision_tree.md",
+      "sha256": "705c5d23f7a900b1c020e53d11af8806e2ecaee5fca33deb2d8120c54af20857",
+      "bytes": 7345
+    }
+  ],
+  "folders": [],
+  "extra": [
+    {
+      "name": "CAPSTONE_brief.md",
+      "sha256": "c3b41f1139aa1939a1799cf27f0f88f36a253165c125cf40963836cf549cb2d5",
+      "bytes": 6894
+    },
+    {
+      "name": "DATA_SPEC.md",
+      "sha256": "10f47e6b7dcc8b3cb9ee58af81467a967d55a28279e8bc529af6478bfe634355",
+      "bytes": 7762
+    },
+    {
+      "name": "S6_lab_student.ipynb",
+      "sha256": "be58fbad837da61b700bc8e0391dab4721cf0df68c7c149a4f789762a43590b0",
+      "bytes": 37578
+    },
+    {
+      "name": "velora_reference_numbers.md",
+      "sha256": "fb27cf45da54a2aabc6712a06a7581a2a592a870f975184dd08c7861ab3d657a",
+      "bytes": 4106
+    }
+  ]
+}

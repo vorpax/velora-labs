@@ -1,0 +1,54 @@
+{
+  "as_of": "2026-05-15",
+  "currency": "EUR",
+  "source": "illustrative",
+  "warning": "These prices are ILLUSTRATIVE and deliberately round. They are not a quote from any provider on any day. Token prices have fallen by roughly an order of magnitude in eighteen months: cite the as_of date in your note, and say what your conclusion does if the price halves. Instructor: refresh at J-7 and move as_of.",
+  "blended_eur_per_mtok": 0.6,
+  "blended_derivation": "Not a quoted product. Derived from the small model's session 1 pair (0.3 in, 2.5 out, EUR per 1M) at a support workload's mix of about 7 input tokens per output token: (7*0.3 + 2.5) / 8 = 0.575, rounded up to 0.6 so the rented side of the build-vs-rent comparison is not flattered.",
+  "models": [
+    {
+      "key": "small",
+      "label": "small hosted model",
+      "eur_per_mtok_in": 0.3,
+      "eur_per_mtok_out": 2.5,
+      "eur_per_mtok_cached_in": 0.03,
+      "note": "The session 1 reference point. Cached input is ~90% off — the cheapest lever."
+    },
+    {
+      "key": "mid",
+      "label": "mid-tier hosted model",
+      "eur_per_mtok_in": 1.1,
+      "eur_per_mtok_out": 4.4,
+      "eur_per_mtok_cached_in": 0.11,
+      "note": "Where most Velora traffic would actually land."
+    },
+    {
+      "key": "large",
+      "label": "frontier hosted model",
+      "eur_per_mtok_in": 3.0,
+      "eur_per_mtok_out": 15.0,
+      "eur_per_mtok_cached_in": 0.3,
+      "note": "Reserved for the hard tail. Routing exists to keep traffic off this line."
+    },
+    {
+      "key": "embed",
+      "label": "embedding model",
+      "eur_per_mtok_in": 0.02,
+      "eur_per_mtok_out": 0.0,
+      "eur_per_mtok_cached_in": 0.0,
+      "note": "Priced per input token only. Re-indexing cost lives here — see T-HIDDEN-COST."
+    }
+  ],
+  "self_hosting": {
+    "gpu_eur_per_hour": 2.0,
+    "hours_per_year": 8760,
+    "mlops_fte_fraction": 0.5,
+    "mlops_fte_loaded_eur": 120000,
+    "note": "A100/H100-class instance, on-demand, one region, running continuously. Reserved capacity cuts this materially and idle time inflates it: the point of the exercise is the STRUCTURE of the calculation, not this number. Every figure here carries a +/-3x error bar."
+  },
+  "human_review_eur_per_hour": [
+    15,
+    25
+  ],
+  "human_review_note": "A loaded support hour in western Europe. The range is given rather than a point because your escalation rate multiplied by this number is, in almost every case in this room, the dominant term in the whole model."
+}
